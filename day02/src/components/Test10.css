@@ -1,0 +1,7 @@
+.Test10{}
+.Test10 p{font-size: 25px; line-height: 2; margin-bottom: 15px;}
+.Test10 .test{background-color: pink; border: 1px solid #000;}
+.Test10 .test.on{background-color: skyblue; color: #fff}
+.Test10 .on{background-color: tomato;}
+.Test10 .on1{background-color: yellow;}
+.Test10 button{padding: 20px 40px; margin-right: 5px;}

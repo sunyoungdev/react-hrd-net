@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1 = [10,20,30,40,50]
+
+        // 배열객체.filter(변수 => 조건)
+        // 결과는 항상 배열 형식[]
+        const result1 = arr1.filter(item => item > 20)
+        console.log(result1)
+
+        const result2 = arr1.filter(item => item === 10)
+        console.log(result2)
+
+        // 20 삭제한 나머지값 출력
+        const result3 = arr1.filter(item => item !== 20)
+        console.log(result3)
+
+        const data = [
+            {id: 1, name:'홍길동', age: 31},
+            {id: 2, name:'홍길동2', age: 32},
+            {id: 3, name:'홍길동3', age: 33},
+            {id: 4, name:'홍길동4', age: 34},
+        ]
+
+        // 문제: id 가 1인 객체만 출력
+        const data1 = data.filter(item => item.id === 1)
+        console.log(data1)
+
+        // 문제: id 가 3인 객체를 제외하고 출력
+        const data2 = data.filter(item => item.id !== 3)
+        console.log(data2)
+
+
+
+    </script>
+</body>
+</html>

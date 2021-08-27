@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const done1 = true
+        const done2 = undefined
+
+        // 삼항연산자 === 세번 사용 or 생략 가능
+        const result1 = done1 === true ? '참' : '거짓'
+        console.log(result1)
+
+        const result2 = done1 ? '참' : '거짓'
+        console.log(result2)
+
+        // 조건 && => 참일 때만 결과 출력(조건에 맞는것만 출력할땐 and 연산자 사용)
+        const result3 = done1 && '나는 참'
+        console.log(result3)
+
+        // 조건 || => 거짓, undefined일 때만 결과 출력(or 연산자)
+        const result4 = done2 || '나는 거짓'
+        console.log(result4)
+
+        // if else 여러 조건 필요할 때 모든 조건식 만들어줌
+        const aa = done1 && '참'
+        const bb = done1 || '거짓'
+
+
+    </script>
+</body>
+</html>

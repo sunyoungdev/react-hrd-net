@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ['강아지', '고양이', '염소', '소']
+
+        // 불변성 - 사본 만들어서 작업
+        const arr1 = arr.concat('토끼')
+        const arr2 = [...arr, '토끼']   // concat과 동일하게 사본을 반환
+
+        console.log(arr1)
+        console.log(arr2)
+
+        const dog = {
+            name: '치와와', age: 2, sex: '남자'
+        }
+
+        // ...객체명 복사, 키: 값 해당키 값이 변경 (수정/변경도 가능)
+        const dog1 = {...dog, age: 5, sex: '여자'}
+        console.log(dog1)
+
+        const data = [
+            {id: 1, name:'홍길동', age: 31},
+            {id: 2, name:'홍길동2', age: 32},
+            {id: 3, name:'홍길동3', age: 33},
+            {id: 4, name:'홍길동4', age: 34},
+        ]
+
+        const data1 = [...data]
+        console.log(data)
+        
+        const data2 = [...data, {           // 1. 추가 : 블락으로 묶어서 추가
+            id: 5, name:'홍길동5', age: 35
+        }]
+        console.log(data2)
+
+        // 2. 수정 : jsx가 아닌 함수영역에서 처리
+        const data3 = data.map((item, index) => {
+            // 조건 
+            if (item.id === 2) {    // 수정
+                return {
+                    ...item, name: '홍길동22222', age: 322222
+                }
+            } else {    // 나머지 리턴
+                return item
+            }
+        })
+        console.log(data3)
+
+        // 3. 삼항연산자 사용
+        const data4 = data.map((item, index) => 
+            item.id === 3 ? {...item, name: '홍길동33333', age: 33333} : item)
+
+        console.log(data4)
+
+
+
+
+
+    </script>
+</body>
+</html>

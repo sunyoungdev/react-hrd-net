@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1 = [10,20,30,40,50]
+
+        // 배열객체.filter(변수 => 조건) : 결과가 배열로
+        // 배열객체.find(변수 => 조건) : 결과가 값 하나만 뽑아옴
+
+        const re1 = arr1.find(item => item > 30)
+        console.log(re1)
+        const re2 = arr1.filter(item => item > 30)
+        console.log(re2)
+
+        const data = [
+            {id: 1, name:'홍길동', age: 31},
+            {id: 2, name:'홍길동2', age: 32},
+            {id: 3, name:'홍길동3', age: 33},
+            {id: 4, name:'홍길동4', age: 34},
+        ]
+
+        // 배열객체.find(변수 => 조건) : {}
+        const data1 = data.find(item => item.id === 2)
+        console.log(data1)
+        const data2 = data.filter(item => item.id === 2)
+        console.log(data2)
+    </script>
+</body>
+</html>

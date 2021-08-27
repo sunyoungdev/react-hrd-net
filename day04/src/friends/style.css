@@ -1,0 +1,13 @@
+.wrap{
+    width: 400px;margin: 20px auto;border: 1px solid #999;
+}
+.wrap h1{font-size: 30px;margin-bottom: 15px;}
+.wrap ul{margin-bottom: 20px;}
+.wrap li{display: flex;margin-bottom: 10px;}
+.wrap li p{width: 120px;height: 120px;border-radius: 100%;overflow: hidden;}
+.wrap li p img{width: 100%;}
+.wrap li div{width: 160px;margin-left: 40px;padding-top: 20px;}
+.wrap li div strong{display: block;font-size: 20px;margin-bottom: 10px;}
+.wrap li div span{font-size: 20px;}
+.wrap .btn{text-align: center;}
+.wrap .btn button{width: 150px;height: 45px;border: none;background: tomato;color: #fff;}

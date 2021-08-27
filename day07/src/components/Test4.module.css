@@ -1,0 +1,7 @@
+.box{width: 250px;height: 250px;margin: 15px;border: 1px solid tomato;background-image: url(../utils/images/ryan4.gif);background-size: cover;background-repeat: no-repeat;}
+.size{width: 250px;height: 250px;margin: 10px;}
+.bg{background: yellow;}
+
+/* js의 import에 명시한 참조변수에 속하지 않는 일반 css 처럼 사용 가능
+ - 독립 클래스 */
+:global .mybox{background: pink;border: 1px solid #000;width: 300px;height: 100px;}

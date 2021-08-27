@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1 = [10,20,30,40,50,60,70,80]
+        arr1.push(90)
+        arr1.push(100)
+        
+        console.log(arr1)   // push는 원본 데이터가 변경된다. 사용 X
+        
+        const arr2 = [10,20,30,40,50,60,70,80]
+        const arr3 = arr2.concat()  // 사본 생성
+        console.log(arr2)
+        console.log(arr3)
+
+        const arr4 = arr2.concat(90,100)    // 사본에 추가
+        console.log(arr4)
+
+        // arr2.slice(시작 인덱스, 시작부터 갯수)
+        const arr5 = arr2.slice(2, 5)
+        console.log(arr5)
+
+        const data = [
+            {id: 1, name: '홍길동', age: 30},
+            {id: 2, name: '홍길동2', age: 32},
+            {id: 3, name: '홍길동3', age: 33},
+            {id: 4, name: '홍길동4', age: 34},
+            {id: 5, name: '홍길동5', age: 35},
+        ]
+        console.log(data)
+
+        const data1 = data.concat({
+            id: 6, name: '홍길동6', age: 36
+        })
+        console.log(data1)
+
+
+    </script>
+</body>
+</html>

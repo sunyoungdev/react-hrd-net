@@ -1,0 +1,14 @@
+.wrap{width:400px;border:1px solid #000;padding:30px;margin:20px auto;}
+.wrap p{margin-bottom: 10px;}
+.wrap p label{display: inline-block;width:80px;}
+.wrap p input{margin-left: 10px;height: 30px;width:250px;padding: 0 10px;border: 1px solid #999;}
+.wrap p:last-child{margin-top: 40px;}
+.wrap p:last-child button{width:160px;height: 45px;text-align: center;border: none;background-color: #333;color: #fff;margin-right: 15px;}
+
+.wrap ul{}
+.wrap ul li{border-bottom: 1px dotted #999; line-height: 3;}
+.wrap ul li span{display: inline-block;width: 80px;}
+.wrap ul li em{display: inline-block;margin-left: 10px;}
+
+.wrap h3{font-size: 40px;text-align: center;}
+.wrap h3 span{display: block;font-weight: 500;}
